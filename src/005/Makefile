@@ -1,5 +1,5 @@
 CC=gcc
-C++=g++
+CXX=g++
 LD=g++
 CFLAGS=-c -Wall -pedantic-errors -O3 -std=c11 -I../
 LDFLAGS=
@@ -7,12 +7,12 @@ OBJECTS=005.o
 EXECUTABLE=005
 
 all: $(EXECUTABLE)
-    
-$(EXECUTABLE): $(OBJECTS) 
+
+$(EXECUTABLE): $(OBJECTS)
 	$(LD) $(LDFLAGS) $(OBJECTS) -o $@
 
 .cpp.o:
-	$(C++) $(CFLAGS) $< -o $@
+	$(CXX) $(CFLAGS) $< -o $@
 
 .c.o:
 	$(CC) $(CFLAGS) $< -o $@
