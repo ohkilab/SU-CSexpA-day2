@@ -1,7 +1,7 @@
 CC=gcc
 CXX=g++
 LD=g++
-CFLAGS=-c -Wall -pedantic-errors -O3 -std=c11 -I../
+CFLAGS=-c -Wall -pedantic-errors -O3 -std=gnu11 -D_GNU_SOURCE -I../
 LDFLAGS=
 OBJECTS=005.o
 EXECUTABLE=005
