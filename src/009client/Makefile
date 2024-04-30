@@ -1,18 +1,18 @@
 CC=gcc
-C++=g++
+CXX=g++
 LD=g++
-CFLAGS=-c -Wall -pedantic-errors -O3 -std=gnu11 -I../
+CFLAGS=-c -Wall -pedantic-errors -O3 -std=gnu11 -D_GNU_SOURCE -I../
 LDFLAGS=
 OBJECTS=009client.o ../exp1lib.o
 EXECUTABLE=009client
 
 all: $(EXECUTABLE)
-    
-$(EXECUTABLE): $(OBJECTS) 
+
+$(EXECUTABLE): $(OBJECTS)
 	$(LD) $(LDFLAGS) $(OBJECTS) -o $@
 
 .cpp.o:
-	$(C++) $(CFLAGS) $< -o $@
+	$(CXX) $(CFLAGS) $< -o $@
 
 .c.o:
 	$(CC) $(CFLAGS) $< -o $@
