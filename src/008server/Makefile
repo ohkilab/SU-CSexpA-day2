@@ -1,7 +1,7 @@
 CC=gcc
 C++=g++
 LD=g++
-CFLAGS=-c -Wall -pedantic-errors -O0 -g3 -std=c11 -I../
+CFLAGS=-c -Wall -pedantic-errors -O0 -g3 -std=gnu11 -I../
 LDFLAGS=
 OBJECTS=008server.o ../exp1lib.o
 EXECUTABLE=008server

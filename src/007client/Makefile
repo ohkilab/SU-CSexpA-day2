@@ -1,7 +1,7 @@
 CC=gcc
 C++=g++
 LD=g++
-CFLAGS=-c -Wall -pedantic-errors -O3 -std=c11 -I../
+CFLAGS=-c -Wall -pedantic-errors -O3 -std=gnu11 -I../
 LDFLAGS=
 OBJECTS=007client.o ../exp1lib.o
 EXECUTABLE=007client
